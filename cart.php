@@ -59,8 +59,16 @@ if(filter_input(INPUT_GET, 'action') == 'delete'){
 <html>
 	<head>
 		<title>Purchase Prints</title>
+		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="cart.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:title" content="PHP Shopping Cart" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://tdavies.co.uk/cart/cart.php" />
+		<meta property="og:image" content="http://tdavies.co.uk/img/previewshop.jpg" />
+		<meta property="og:description" content="Simple shopping cart test page" />
 	</head>
 	<body>
 		<div class="container"  id="cart">
