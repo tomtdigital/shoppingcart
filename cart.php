@@ -63,7 +63,6 @@ if(filter_input(INPUT_GET, 'action') == 'delete'){
     		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="cart.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta property="og:title" content="PHP Shopping Cart" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://tdavies.co.uk/cart/cart.php" />
