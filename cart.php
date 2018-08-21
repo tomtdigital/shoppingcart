@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 //Check to see if the button has been submitted. Filter input sieves only this result out from the POSTs.
