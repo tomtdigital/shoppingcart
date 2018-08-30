@@ -7,7 +7,7 @@
 <head>
 	<title>Checkout</title>
 	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="cart.css">
 </head>
@@ -23,36 +23,7 @@
 							<th width="20%">Price</th>
 							<th width="20%">Total</th>
 						</tr>
-						<?php 
-						if(!empty($_SESSION['shopping_cart'])):
-							$total = 0;
-							//For each iteration of the cart array (giving them the id of product), create the following html- 
-							foreach ($_SESSION['shopping_cart'] as $key => $product):
-							?>		
-							<tr>
-								<td><?php echo $product['name']; ?></td>
-								<td><?php echo $product['quantity']; ?></td>
-								<td><?php echo $product['price']; ?></td>
-								<td><?php echo number_format($product['quantity'] * $product['price'], 2/*ensures correct £.p display*/); ?></td>
-						</tr>
-						<?php 
-							$total = $total + ($product['quantity'] * $product['price']);
-							endforeach
-							?>
-							<tr>
-							<td width="40%"><b>Total</b></td>
-							<td width="20%"></td>
-							<td width="20%"></td>
-							<td width="20%"><b>£<?php echo number_format($total, 2) ?></b></td>
-							</tr>
-							<tr>
-								<td colspan="5" align="center">
-									<a href="cart.php" class="btn-info change">Change Order</a>
-								</td>
-							</tr>
-							<?php
-						endif;
-						?>
+						<?php include './checkoutbasket.php'; ?>
 				</table>
 			</div>
 			<div id="checkoutform">
