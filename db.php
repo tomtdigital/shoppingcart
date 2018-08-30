@@ -1,5 +1,5 @@
 <?php 
-			$connect = mysqli_connect('10.169.0.176', 'tdaviesc_root', '51Ilovecup!', 'tdaviesc_cart');
+			$connect = mysqli_connect('', '', '', '');
 			$query = 'SELECT * FROM products ORDER by id ASC';
 			//Uses the above variables to connect to database and selects the contents of the products in ascending order
 			$result = mysqli_query($connect, $query);
