@@ -9,20 +9,26 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta property="og:title" content="PHP Shopping Cart" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://tdavies.co.uk/cart/cart.php" />
+		<meta property="og:url" content="http://tdavies.co.uk/cart/index.php" />
 		<meta property="og:image" content="http://tdavies.co.uk/img/previewshop.jpg" />
 		<meta property="og:description" content="Simple shopping cart test page" />
 	</head>
 	<body>
 		<div class="container"  id="cart">
 			<h1 class="purchase text-white">Exhibition Prints-</h1>
+			<?php $itemcount = sizeof($_SESSION['shopping_cart']); 
+				if ($itemcount > 0):
+				?>
+				<a href="index.php#order" class="jump">Jump to basket</a>
+				<br>
+				<br>
+			<?php endif ?>
 			<div class="row">
 			<?php include './db.php'; ?>	
 			</div>
 				<div style="clear:both"></div>
 				<br>
-				<?php $itemcount = sizeof($_SESSION['shopping_cart']); 
-				if ($itemcount > 0):
+				<?php if ($itemcount > 0):
 				?>
 					<h2 class="count">You have selected <span class="text-info"><?php echo $itemcount ?>x</span> photograph types.</h2>
 				<br>

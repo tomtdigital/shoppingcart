@@ -11,7 +11,7 @@
 								<td><?php echo number_format($product['quantity'] * $product['price'], 2/*ensures correct £.p display*/); ?></td>
 							<td>
 							<!--Linked to the delete product php above-->
-								<a href="cart.php?action=delete&id=<?php echo $product['id']; ?>">
+								<a href="index.php?action=delete&id=<?php echo $product['id']; ?>">
 									<div class="btn-danger">Remove</div>
 								</a>
 							</td>

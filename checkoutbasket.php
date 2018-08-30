@@ -21,7 +21,7 @@
 							</tr>
 							<tr>
 								<td colspan="5" align="center">
-									<a href="cart.php" class="btn-info change">Change Order</a>
+									<a href="index.php" class="btn-info change">Change Order</a>
 								</td>
 							</tr>
 							<?php
